@@ -1,0 +1,505 @@
+@charset "utf-8";
+
+html {
+    font-size: 100%;
+}
+body {
+    background-color: #22a2c6;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+ul {
+    list-style-type: none;
+}
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 1% 6%;
+    height: 90px;
+    background-image: url(./img/head.png);
+}
+.headleft {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+}
+.headleft h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
+.headleft p {
+    font-size: 0.8rem;
+}
+.headright {
+    text-align: right;
+}
+.headright p {
+    font-size: 0.7rem;
+    line-height: 1.1rem;
+}
+.spdis {
+    display: none;
+}
+
+main {
+    margin-top: 0;
+    position: relative;
+}
+
+/* メニュー */
+#nav {
+    color: #fff;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#nav ul {
+    display: flex;
+}
+#nav li {
+    background-color: #999;
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 50px;
+    border: 1px solid #fff;
+    transition: background-color 1s;
+}
+#nav li:hover {
+    background-color: #eee;
+}
+.current {
+    background-color: #ddd;
+    color: #555;
+}
+
+/* メインページ */
+#article section {
+    margin: 0 auto 30px;
+    padding: 3% 3%;
+    background-color: #ddd;
+    color: #000;
+    text-align: left;
+    font-size: 1rem;
+}
+#article section h1 {
+    margin: 2%;
+    font-size: 2.2rem;
+    font-weight: normal;
+    border-bottom: 1px solid #000;
+}
+#article section p {
+    margin: 3% auto;
+}
+#article section li {
+    margin: 4%;
+    list-style-type: disc;
+}
+
+/* #news ニュース */
+#news .mainimage {
+    padding: 0;
+    margin: -3% -3% 100px;
+}
+#news .mainimage img {
+    height: calc(100vh - 140px);
+    width: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+}
+.news-list dl {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 2% 10%;
+}
+.news-list dt {
+    width: 20%;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.news-list dd {
+    width: 80%;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.news-list dt:last-of-type {
+    border-bottom:  1px solid #555;
+} 
+.news-list dd:last-of-type {
+    border-bottom:  1px solid #555;
+} 
+
+/* #company 会社情報 */
+.text-wrapper {
+    padding: 5% 3%;
+    border-bottom: 1px solid #888;
+}
+.text-wrapper h3 {
+    font-size: 2rem;
+}
+.text-wrapper p {
+    margin: 3% auto;
+}
+.message p {
+    width: 80%;
+    margin-left: 0;
+}
+.companyIndex {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.companyIndex .lefttext {
+    width: 50%;
+}
+.companyIndex .comimg {
+    width: 45%;
+}
+.companyIndex dl {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 2% 5%;
+    line-height: 3rem;
+}
+.companyIndex dt {
+    width: 30%;
+}
+.companyIndex dd{
+    width: 70%;
+}
+.companyHistory {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.companyHistory .hisimg {
+    width: 30%;
+}
+.companyHistory .righttext {
+    width: 60%;
+}
+.companyHistory dl {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 2% 5%;
+}
+.companyHistory dt {
+    width: 20%;
+}
+.companyHistory dd {
+    width: 80%;
+    padding-left: 1%;
+    margin-bottom: 30px;
+}
+.map {
+    display: flex;
+    justify-content: space-between;
+}
+.maptext {
+    width: 45%;
+}
+.maptext p {
+    padding-left: 4%;
+}
+.mapimage {
+    width: 50%;
+}
+
+/* #business 事業紹介 */
+#business .thumb {
+    margin-left: 5%;
+}
+#business .b-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 3% 3%;
+    padding: 4% 4%;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 30px;
+}
+#business .b-wrapper:first-of-type {
+    border-top: 1px solid #aaa;
+    padding-top: 50px;
+}
+#business .b-left {
+    width: 48%;
+}
+#business .b-right {
+    width: 49%;
+}
+#business .b-right h3 {
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+}
+#business .b-right p {
+    padding-left: 3%;
+}
+#back-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(6, 22, 36, 0.9)
+}
+#photo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 900px;
+    height: 650px;
+}
+
+#recruit p {
+    padding-left: 4%;
+    font-size: 1.1rem;
+}
+
+#contact p {
+    margin-top: 50px;
+}
+#contact form {
+    margin: 0 10%;
+}
+input, textarea {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-left: 2%;
+    line-height: 1.3rem;
+}
+#name {
+    width: 20%;
+    height: 1.4rem;
+}
+#email {
+    width: 35%;
+    height: 1.4rem;
+}
+textarea {
+    line-height: 1.3rem;
+    width: 60%;
+    height: 7rem;
+}
+#resetbtn {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #bbb;
+    transition: background-color 1s;
+}
+#resetbtn:hover {
+    background-color: #fff;
+}
+
+/* 画面高さの設定 */
+@media(max-height:650px){
+    #photo {
+        width: 720px;
+        height: 520px;
+    }
+}
+
+/* レスポンシブ対応 */
+@media(max-width:800px){
+    /* ヘッダー設定 */
+    #header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-right: 4%;
+        z-index: 10;
+    }
+    .pcdis {
+        display: none;
+    }
+    .spdis {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 90px;
+        width: 90px;
+        border: 1px solid #fff;
+    }
+    .spdis div {
+        width: 60px;
+        height: 10px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+    .spdis div:first-child {
+        margin-top: 10px;
+    }
+    .spdis div:last-child {
+        margin-bottom: 10px;
+    }
+    main {
+        margin-top: 90px;
+        position: static;
+    }
+
+    /* SP版メニュー */
+    #nav {
+        display: none;
+        position: fixed;
+        top: 90px;
+        left: 50%;
+        width: 50%;
+        z-index: 10;
+    }
+    #nav ul {
+        flex-direction: column;
+    }
+    #nav li {
+        background-color: #888;
+        flex: 1 1 auto;
+        text-align: center;
+        font-size: 1.3rem;
+        line-height: 60px;
+        border: 1px solid #000;
+    }
+
+    /* SP版 #news ニュース */
+    .news-list dl {
+        display: block;
+        width: 90%;
+    }
+    .news-list dt {
+        width: 100%;
+        padding-top: 10px;
+    }
+    .news-list dd {
+        width: 100%;
+        padding-left: 10%;
+        border-top: 0;
+        padding-top: 0;
+        margin-bottom: 10px;
+    }
+    .news-list dt:first-of-type {
+        border-top:  0;
+    } 
+    .news-list dd:first-of-type {
+        border-top: 0;
+    }
+    .news-list dt:last-of-type {
+        border-bottom:  0;
+    } 
+    .news-list dd:last-of-type{
+        border-bottom:  0;
+    }
+    
+    /* SP版 #company 会社情報 */
+    .text-wrapper {
+        padding: 5% 0;
+    }
+    .companyIndex, .companyHistory {
+        display: block;
+    }
+    .comimg, .hisimg {
+        display: none;
+    }
+    .companyIndex .lefttext {
+        display: block;
+        width: 100%;
+    }
+    .companyIndex .lefttext span {
+        display: none;
+    }
+    .companyHistory .righttext {
+        display: block;
+        width: 100%;
+    }
+    .companyIndex dl, .companyHistory dl {
+        display: block;
+    }
+    .companyIndex dt, .companyHistory dt {
+        width: 100%;
+        line-height: 2rem;
+    }
+    .companyIndex dd, .companyHistory dd {
+        width: 100%;
+        padding: 0 5%;
+        margin-bottom: 30px;
+    }
+    .map {
+        flex-direction: column;
+    }
+    .maptext {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .mapimage {
+        width: 100%;
+        border: 1px solid #000;
+    }
+    .mapimage iframe {
+        width: 100%;
+        vertical-align: bottom;
+    }
+    .b-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    #business .b-left {
+        width: 100%;
+    }
+    #business .b-right {
+        width: 100%;
+        padding: 4% 0;
+    }
+    #back-modal {
+        top: 90px;
+    }
+    #photo {
+        width: 100%;
+        top: 50%;
+    }
+    #contact, #recruit {
+        height: 85vh;
+    }
+    #contact p {
+        margin-top: 100px;
+    }
+    #name {
+        width: 50%;
+    }
+    #email {
+        width: 80%;
+    }
+    textarea {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
