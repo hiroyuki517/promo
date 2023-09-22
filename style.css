@@ -61,6 +61,7 @@ main {
 
 /* メニュー */
 #nav {
+    font-family: 'Sawarabi Mincho', serif;
     color: #fff;
     height: 50px;
     width: 100%;
@@ -98,6 +99,7 @@ main {
     font-size: 1rem;
 }
 #article section h1 {
+    font-family: 'Sawarabi Mincho', serif;
     margin: 2%;
     font-size: 2.2rem;
     font-weight: normal;
@@ -335,6 +337,14 @@ textarea {
         bottom: 0;
         padding-right: 4%;
         z-index: 10;
+        height: 70px;
+    }
+    .headleft h2 {
+        font-size: 1.6rem;
+        font-weight: normal;
+    }
+    .headleft p {
+        font-size: 0.7rem;
     }
     .pcdis {
         display: none;
@@ -344,13 +354,13 @@ textarea {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 90px;
-        width: 90px;
+        height: 70px;
+        width: 70px;
         border: 1px solid #fff;
     }
     .spdis div {
-        width: 60px;
-        height: 10px;
+        width: 45px;
+        height: 5px;
         background-color: #fff;
         border-radius: 4px;
     }
@@ -361,7 +371,7 @@ textarea {
         margin-bottom: 10px;
     }
     main {
-        margin-top: 90px;
+        margin-top: 70px;
         position: static;
     }
 
@@ -369,7 +379,7 @@ textarea {
     #nav {
         display: none;
         position: fixed;
-        top: 90px;
+        top: 70px;
         left: 50%;
         width: 50%;
         z-index: 10;
@@ -497,9 +507,3 @@ textarea {
         width: 100%;
     }
 }
-
-
-
-
-
-
